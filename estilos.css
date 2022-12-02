@@ -1,0 +1,222 @@
+
+*{
+    font-family: 'Secular One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: #2D3563;
+}
+.logoContainer {
+    background-color:#F7F7F7; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbarContainer {
+    background-image: url("./informacion/puertos-maritimos-contenedores.jpg");
+    background-size: cover;
+}
+.logoContainer img {
+    width: 400px;
+}
+.navbar {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 5vw;
+    background-color: #F7F7F7;
+}
+nav a {
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+.img-logo {
+    width: 100%;
+}
+.imgContainer {
+    width: 20vw;
+}
+nav a:hover {
+text-shadow: 5px 4px 8px rgba(0,0,0,0.35);
+transition: 1s all;
+} 
+.title {
+    text-align: center;
+    padding: 20vh 0; 
+    font-size: 2.5rem;
+}
+h1 {
+    font-family: 'Secular One', sans-serif;
+    color: #F7F7F7;
+    text-shadow: 4px 2px 2px rgba(0,0,0,1);
+}
+.formContacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:#C4D7E0;
+    width: 70vw;
+    padding: 5vw;
+    margin-top: 15vh;
+    gap: 3vh;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #B2C8DF;
+    color: black;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 3px #B2C8DF;
+}
+.formContacto h2{
+    font-size: 2rem;
+}
+.quienesSomos img {
+    width: 100%;
+    border-radius: 10px;
+}
+.quienesSomos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 7vh;
+    gap: 2vh;
+    color: #2D3563;
+}
+.quienesSomos p{
+    text-align: center;
+}
+.quienesSomos h2{
+    font-size: 2rem;
+    color:  #2D3563;
+}
+.cartas {
+    width: 100%;
+    text-align: center;
+}
+.cartasContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.carta {
+    background-color:#C4D7E0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5vh;
+    box-shadow: 3px 3px 3px #B2C8DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carta p {
+    margin-bottom: 0%;
+}
+.cartas h2{
+    font-size: 1.7rem;
+}
+.Servicios {
+    background-color: #C4D7E0 ;
+    width: 100%;
+    padding: 10vh 0vh;
+    margin: 10vh 0vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorCarta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.cartaServicio {
+    background-color: #F7F7F7;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #B2C8DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.cartaServicio:hover {
+    transition: all 750ms;
+    box-shadow: 7px 7px 7px #99acc0;
+    background-color: white;
+}
+.cartaServicio h3 {
+    font-size: 1rem;
+}
+.servicioTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5vh;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+    background-color: #F7F7F7;
+}
+footer a i {
+    font-size: 2rem;
+}
+footer a {
+    color: #2D3563;
+}
+.imgFotos {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #B2C8DF;
+}
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+.infoContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+.infoContacto h3 {
+    text-align: center;
+}
+.resaltado {
+    font-weight: bolder;
+}
+.contacto h2 {
+    width: 100%;
+    text-align: center;
+}
+a:hover {
+    color: #2D3563;
+}
