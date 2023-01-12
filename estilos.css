@@ -1,4 +1,11 @@
-
+@keyframes titulo-escalable {
+    0% {
+        transform: scale(0.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 *{
     font-family: 'Secular One', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -32,6 +39,9 @@ nav {
     align-items: center;
     gap: 5vw;
     background-color: #F7F7F7;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
 }
 nav a {
     padding: 20px;
@@ -50,6 +60,10 @@ text-shadow: 5px 4px 8px rgba(0,0,0,0.35);
 transition: 1s all;
 } 
 .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
     text-align: center;
     padding: 20vh 0; 
     font-size: 2.5rem;
@@ -58,6 +72,9 @@ h1 {
     font-family: 'Secular One', sans-serif;
     color: #F7F7F7;
     text-shadow: 4px 2px 2px rgba(0,0,0,1);
+    animation-name: titulo-escalable; 
+    animation-duration: 1s;
+    font-size: 4rem;
 }
 .formContacto {
     display: flex;
@@ -90,7 +107,7 @@ main {
     box-shadow: 3px 3px 3px #B2C8DF;
 }
 .formContacto h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .quienesSomos img {
     width: 100%;
@@ -108,7 +125,7 @@ main {
     text-align: center;
 }
 .quienesSomos h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color:  #2D3563;
 }
 .cartas {
@@ -119,6 +136,8 @@ main {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    animation-name: carrousel;
+
 }
 .carta {
     background-color:#C4D7E0;
@@ -134,7 +153,7 @@ main {
     margin-bottom: 0%;
 }
 .cartas h2{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
 .Servicios {
     background-color: #C4D7E0 ;
@@ -174,7 +193,7 @@ main {
 }
 .servicioTitle {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-top: 5vh;
 }
 footer {
@@ -216,7 +235,66 @@ footer a {
 .contacto h2 {
     width: 100%;
     text-align: center;
+    font-size: 2.5rem;
 }
 a:hover {
     color: #2D3563;
+}
+.btn-submit {
+    background-color:#2D3563 ;
+    color:#F7F7F7 ;
+    padding: 5px 10px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px #1f2546;
+}
+.btn-submit:hover {
+    background-color:#3e4986 ;
+    transition: all 1s ease;
+}
+.carrousel-item {
+    z-index: 1;
+}
+.btn-nav {
+    display: none;
+}
+
+
+/* /Media querie - Mobible Size/ */
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2vh 5vw;
+    }
+    .imgContainer {
+        order: 0;
+    }
+    .cartasContainer {
+        flex-wrap: wrap;
+    }
+    .infoContacto {
+        text-align: center;
+        padding: 10vh 5vw;
+    }
+    .mapa {
+        width:100%;
+    }
+    .imgCarousel {
+        width: 90%;
+    }
+    .hidden-m {
+        display: none;
+    }
+    .btn-nav {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        color: #2D3563;
+    }
+    .imgContainer {
+        width: 30vw;
+    }
 }
