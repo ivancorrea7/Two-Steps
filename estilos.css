@@ -259,17 +259,29 @@ a:hover {
 .btn-nav {
     display: none;
 }
-
+@media screen and (max-width: 1200px) {
+    .title {
+        margin-top: 15vh;
+    }
+}
 
 /* /Media querie - Mobible Size/ */
 @media screen and (max-width: 700px) {
     nav {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         padding: 2vh 5vw;
     }
-    .imgContainer {
-        order: 0;
+    .link-1{
+        order: 2;
+    }
+    .link-2 {
+        order: 3;
+    }
+    .link-3 {
+        order: 4;
+    }
+    .link-4 {
+        order: 5;
     }
     .cartasContainer {
         flex-wrap: wrap;
@@ -296,5 +308,14 @@ a:hover {
     }
     .imgContainer {
         width: 30vw;
+    }
+    .logoNav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        order: 1;
+    }
+    .title {
+        margin-top: 15vh;
     }
 }
