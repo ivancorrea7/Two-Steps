@@ -108,6 +108,7 @@ main {
 }
 .formContacto h2{
     font-size: 2.5rem;
+    text-align: center;
 }
 .quienesSomos img {
     width: 100%;
@@ -258,6 +259,9 @@ a:hover {
 }
 .btn-nav {
     display: none;
+}
+.carousel {
+    border-radius: 5px;
 }
 @media screen and (max-width: 1200px) {
     .title {
