@@ -76,6 +76,11 @@ h1 {
     animation-duration: 1s;
     font-size: 4rem;
 }
+h1 span {
+    color: #F7F7F7;
+    font-weight: bolder;
+    font-size: 4rem;
+}
 .formContacto {
     display: flex;
     align-items: center;
@@ -263,6 +268,8 @@ a:hover {
 .carousel {
     border-radius: 5px;
 }
+
+
 @media screen and (max-width: 1200px) {
     .title {
         margin-top: 15vh;
@@ -321,5 +328,8 @@ a:hover {
     }
     .title {
         margin-top: 10vh;
+    }
+    .quienesSomos h2 {
+        font-size: 2.3rem;
     }
 }
